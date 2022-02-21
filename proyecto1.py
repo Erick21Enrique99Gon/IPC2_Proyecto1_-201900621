@@ -1,16 +1,18 @@
-'''import easygui
+import easygui
 from xml.dom.minidom import parse
 
-#r = easygui.fileopenbox()
-#archivo = open(r,'r',encoding="utf8")
+r = easygui.fileopenbox()
+archivo = open(r,'r',encoding="utf8")
 #print(archivo.read())
-a = minidom.parse("datos.xml")
-#archivo.close()
+a = parse(r)
+print(a.getElementsByTagName("name")[0].firstChild.data)
+
+archivo.close()
 
 #if __name__ == '__main__':
-#    print("main")'''
+#    print("main")
 
-from xml.dom.minidom import parse 
+'''from xml.dom.minidom import parse 
 
 doc = parse("datos.xml")
 
@@ -24,4 +26,4 @@ for staff in staffs:
         nickname = staff.getElementsByTagName("nickname")[0]
         salary = staff.getElementsByTagName("salary")[0]
         print("id:%s, nickname:%s, salary:%s" %
-              (sid, nickname.firstChild.data, salary.firstChild.data))
+              (sid, nickname.firstChild.data, salary.firstChild.data))'''
