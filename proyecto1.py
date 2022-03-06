@@ -78,7 +78,7 @@ def cambio():
             patronFinal.listaOrtogonal.imprimir()
             patronFinal.listaOrtogonal.graficar(patronFinal.codigo,piso.nombre)
         cambiando = Cambios(piso.S, piso.F)
-        cambiando.CAMBIAR(patronInicial, patronFinal)
+        cambiando.CAMBIAR(patronInicial, patronFinal, piso.nombre)
 
 if __name__ == '__main__':
     llave = True

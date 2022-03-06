@@ -11,7 +11,7 @@ class Cambios:
         self.S = int(S)
         self.lista_de_precios = lista()
     
-    def CAMBIAR(self,patronInicial,patronFinal):
+    def CAMBIAR(self,patronInicial,patronFinal,piso):
         auxPI = listaOrtogonal(0, 0)
         auxPI= patronInicial.listaOrtogonal
         auxPF = listaOrtogonal(0, 0)
@@ -41,8 +41,8 @@ class Cambios:
                 nodoaux2PI = nodoaux2PI.abajo
             
             self.lista_de_precios.insertarFinal(cambios_de_patron(precio, aux_lista_cambios))
-            print("El total con el metodo es de: Q"+ str(precio+".00"))
-            
+            print("El total con el metodo es de: Q"+ str(precio)+".00")
+            auxPI.graficar(patronInicial.codigo, piso+ " cambiado")
             '''auxPI= patronInicial.listaOrtogonal
             nodoaux2PF = auxPF.cabeza
             nodoaux2PI = auxPI.cabeza
