@@ -1,16 +1,45 @@
 <?xml version="1.0"?>
-<company>
-	<name>Mkyong Enterprise</name>
-	<staff id="1001">
-		<nickname>mkyong</nickname>
-		<salary>100,000</salary>
-	</staff>
-	<staff id="1002">
-		<nickname>yflow</nickname>
-		<salary>200,000</salary>
-	</staff>
-	<staff id="1003">
-		<nickname>alex</nickname>
-		<salary>20,000</salary>
-	</staff>
-</company>
+<pisosArtesanales>
+ <piso nombre="ejemplo01">
+ <R> 2 </R>
+ <C> 4 </C>
+ <F> 1 </F>
+ <S> 1 </S>
+ <patrones>
+ <patron codigo="cod11">
+ WBWBWWWB
+ </patron>
+ <patron codigo="cod12">
+ BWBWWWWW
+ </patron>
+ </patrones>
+ </piso>
+ <piso nombre="ejemplo02">
+ <R> 3 </R>
+ <C> 3 </C>
+ <F> 1 </F>
+ <S> 1 </S>
+ <patrones>
+ <patron codigo="cod21">
+ WBBBWBWWW
+ </patron>
+ <patron codigo="cod22">
+ WWWWBWWWB
+ </patron>
+ </patrones>
+ </piso>
+ <piso nombre="ejemplo03">
+ <R> 1 </R>
+ <C> 5 </C>
+ <F> 1000 </F>
+ <S> 1 </S>
+ <patrones>
+ <patron codigo="cod31">
+ WBBBB
+ </patron>
+ <patron codigo="cod32">
+ BBBWW
+ </patron>
+ </patrones>
+ </piso>
+</pisosArtesanales>
