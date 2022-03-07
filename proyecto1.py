@@ -31,8 +31,10 @@ def leer_pisos():
             l.insertar_i_d_a_r(patron.strip())
             patron_clase = Clase_Patron(codigo, l)
             patrones_arreglo.insertarFinal(patron_clase)
+            patrones_arreglo.ordenarListaPorCodigoPatron()
         auxpiso = piso(nombre, R, C, F, S,patrones_arreglo)
         Pisol.insertarFinal(auxpiso)
+        Pisol.ordenarListaPorNombrePiso()
     Pisol.imprimirListaPisos()
     
 def graficar():

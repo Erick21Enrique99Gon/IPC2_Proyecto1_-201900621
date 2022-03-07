@@ -88,6 +88,34 @@ class lista_:
             nodoTemporal = nodoTemporal.siguiente
         print("No se encontro el patron")
 
+    def ordenarListaPorNombrePiso(self):
+        aux = NodoListaEnlazadaDoble("")
+        aux = self.final
+        if aux != None:
+            while aux != None:
+                aux2 = NodoListaEnlazadaDoble("")
+                
+                if aux.anterior!=None:
+                    if aux.dato.nombre < aux.anterior.dato.nombre:
+                        aux2.dato = aux.dato
+                        aux.dato = aux.anterior.dato
+                        aux.anterior.dato = aux2.dato
+                aux = aux.anterior
+            
+    def ordenarListaPorCodigoPatron(self):
+        aux = NodoListaEnlazadaDoble("")
+        aux = self.final
+        if aux != None:
+            while aux != None:
+                aux2 = NodoListaEnlazadaDoble("")
+                
+                if aux.anterior!=None:
+                    if aux.dato.codigo < aux.anterior.dato.codigo:
+                        aux2.dato = aux.dato
+                        aux.dato = aux.anterior.dato
+                        aux.anterior.dato = aux2.dato
+                aux = aux.anterior
+
     def imprimirListaPisos(self):
         nodoTemp = NodoListaEnlazadaDoble("")
         nodoTemp = self.inicio
